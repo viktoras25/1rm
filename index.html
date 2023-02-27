@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>1RepMax Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="container container-sm">
+<div class="row justify-content-center">
+    <div class="col-6">
+        <h4 class="display-6 text-center py-3">One Rep Max Calculator</h4>
+
+        <form>
+            <div class="row py-1">
+                <div class="col">
+                    <label for="weight" class="col-form-label fw-bold">Weight:</label>
+                    <input type="number" name="weight" id="weight" data-input-weight class="form-control form-control-lg">
+                </div>
+
+                <div class="col">
+                    <label for="reps" class="col-form-label fw-bold">Reps:</label>
+                    <input type="number" name="reps" id="reps" data-input-reps class="form-control form-control-lg">
+                </div>
+            </div>
+
+            <div class="row small">
+                <div class="col-12 text-center">
+<!--                    <label for="rpe" class="col-form-label fw-bold">@ RPE:</label>-->
+
+<!--                    <select id="rpe" name="rpe" class="form-control form-control-sm d-inline-block w-auto">-->
+<!--                        <option value="10">Extreme</option>-->
+<!--                        <option value="9" selected="selected">Very hard</option>-->
+<!--                        <option value="8">Hard</option>-->
+<!--                        <option value="7">Moderate</option>-->
+<!--                    </select>-->
+
+                    <label for="round" class="col-form-label fw-bold">Rounded to nearest:</label>
+                    <select id="round" name="round" data-input-round class="form-control form-control-sm d-inline-block w-auto">
+                        <option value="5">5</option>
+                        <option value="2.5" selected="selected">2.5</option>
+                        <option value="1">1</option>
+                        <option value="0.01">No rounding</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <div class="text-center py-5">
+            <div>Calculated One Rep Max</div>
+            <div class="display-6 fw-bold" id="result"></div>
+            <div id="resultDetails"></div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
