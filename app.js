@@ -67,7 +67,7 @@ function calculateRepMax() {
 
     let table = '';
 
-    table += '<div class="py-4"><table class="table">'
+    table += '<div class="py-4 overflow-scroll"><table class="table">'
 
     table += '<tr>'
     table += '<th>Reps</th>'
